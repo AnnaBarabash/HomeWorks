@@ -1,0 +1,113 @@
+html,body, ul, li, h2, h3, p,div{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+.wrapper{
+    width: 1000px;
+    margin: 10px auto;
+}
+
+.nav ul {
+    display: flex;
+    background-color: #333;
+}
+
+.nav ul li {
+    border-right: 2px solid #ccc;
+}
+
+.nav ul li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav ul li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.products .card{
+    width: calc(100% / 4 - 30px);
+    margin: 15px;
+    background-color: #0095000b;
+    text-align: center;
+    padding: 10px 10px 20px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.products .card img{
+    width: 70%;
+}
+
+.products .card h2{
+    color:  #009500;
+}
+
+.products .card button{
+    padding: 10px 15px;
+    border: 1px solid green;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #009500;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.cart table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart table, .cart th, .cart td {
+    border: 1px solid black;
+}
+.cart th{
+    text-transform: uppercase;
+    background-color: #333;
+    color: white;
+}
+
+.cart th, .cart td{
+    padding: 15px;
+}
+
+.cart th.price, .cart th.count, .cart th.total{
+    width: 15%;
+}
+
+.cart tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.cart .totalPrice{
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-top: 15px;
+    color: red;
+    font-weight: bold;
+}
